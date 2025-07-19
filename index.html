@@ -9,21 +9,38 @@
 </head>
 <body>
     <div class="neon-background"></div>
+    
+    <!-- Mobile Menu Button -->
+    <div class="mobile-menu-btn" id="mobileMenuBtn">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="overlay-content">
+            <button class="close-btn" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="mobile-login-btn">Login</a></li>
+                <li><a href="register.html" class="mobile-join-btn">Join Now</a></li>
+                <li><a href="dashboard.html" class="mobile-account-btn">My Account</a></li>
+            </ul>
+        </div>
+    </div>
+
     <header class="glass-nav">
         <div class="logo">
             <h1><span class="neon-text">Omkar</span> Fitness</h1>
         </div>
         <nav>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-    <i class="fas fa-bars"></i>
-</button>
-
-<!-- Mobile Menu -->
-<div class="mobile-menu" id="mobileMenu">
-    <button class="close-btn" id="closeMenuBtn">
-        <i class="fas fa-times"></i>
-    </button>
-            <ul>
+            <ul class="desktop-nav">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="membership.html">Membership</a></li>
@@ -32,15 +49,7 @@
                 <li><a href="register.html" class="plan-button">Join Now</a></li>
                 <li><a href="dashboard.html" class="login-btn" id="accountBtn">My Account</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
-        <div class="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
     </header>
 
     <main>
@@ -86,7 +95,6 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="membership.html">Membership</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    
                 </ul>
             </div>
             <div class="footer-section">
